@@ -38,7 +38,6 @@ const Footer = () => {
                   href={link.href}
                   onClick={(e) => scrollTo(e, link.href)}
                   className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300">
-
                     {link.label}
                   </a>
                 </li>
@@ -57,20 +56,22 @@ const Footer = () => {
             <a
               href="mailto:info@aurumitalia.co.id"
               className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3 inline-block">
-
               info@aurumitalia.co.id
             </a>
           </div>
         </div>
 
-        <div className="border-t border-ivory/5 pt-6">
-          <p className="text-ivory/25 font-sans text-xs leading-relaxed"> All activities are conducted in accordance with applicable Indonesian laws and regulations.
-
+        <div className="border-t border-ivory/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-ivory/25 font-sans text-xs leading-relaxed">
+            All activities are conducted in accordance with applicable Indonesian laws and regulations.
+          </p>
+          <p className="text-ivory/25 font-sans text-xs leading-relaxed">
+            &copy; {new Date().getFullYear()} PT Aurum Italia Nusantara. All rights reserved.
           </p>
         </div>
       </div>
-    </footer>);
-
+    </footer>
+  );
 };
 
 export default Footer;
