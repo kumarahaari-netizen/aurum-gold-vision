@@ -23,7 +23,7 @@ Indonesia</p>
           </div>
         </div>
         <div className="border-t border-ivory/5 pt-6">
-          <p className="text-ivory/25 font-sans text-xs leading-relaxed">© 2025 PT Aurum Italia Nusantara                                                                                                           All activities are conducted in accordance with applicable Indonesian laws and regulations.
+          <p className="text-ivory/25 font-sans text-xs leading-relaxed">© 2025 PT Aurum Italia Nusantara                                                                                                            All activities are conducted in accordance with applicable Indonesian laws and regulations.
 
           </p>
         </div>
