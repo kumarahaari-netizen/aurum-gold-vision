@@ -6,9 +6,14 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-ivory text-base mb-3">PT Aurum Italia Nusantara</h3>
             <div className="text-ivory/40 font-sans text-xs leading-relaxed space-y-0.5">
-              <p>Treasury Tower Lt.11, SCBD District 8</p>
-              <p>Jl. Jend. Sudirman No. 52–53</p>
-              <p>South Jakarta, Indonesia</p>
+              <p>Jl. Tjilik Riwut Km 1 No. 1
+Palangkaraya
+Central Kalimantan 73112
+Indonesia</p>
+              <p>
+              </p>
+              <p>
+              </p>
             </div>
           </div>
           <div className="text-ivory/40 font-sans text-xs">
@@ -23,8 +28,4 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
-};
-
-export default Footer;
+    </footer>);};export default Footer;

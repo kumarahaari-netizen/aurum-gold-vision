@@ -24,7 +24,11 @@ const ContactSection = () => {
           <div className="fade-in">
             <h3 className="font-serif text-foreground text-xl mb-6">PT Aurum Italia Nusantara</h3>
             <div className="text-muted-foreground font-sans text-sm leading-relaxed space-y-1 mb-8">
-              <p>Jl. Tjilik Riwut Km 1 No. 1</p>
+              <p>Jl. Tjilik Riwut Km 1 No. 1
+
+Palangkaraya
+Central Kalimantan 73112
+Indonesia</p>
               <p>
               </p>
               <p>
@@ -46,21 +50,17 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name" className="text-foreground text-xs tracking-[0.1em] mb-2 block">NAME</Label>
-                <Input id="name" value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="bg-transparent border-border focus:border-gold/50 rounded-none"
-                  required />
+                <Input id="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="bg-transparent border-border focus:border-gold/50 rounded-none" required />
 
               </div>
               <div>
                 <Label htmlFor="email" className="text-foreground text-xs tracking-[0.1em] mb-2 block">EMAIL</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="bg-transparent border-border focus:border-gold/50 rounded-none"
-                  required />
+                <Input id="email"
+                type="email"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                className="bg-transparent border-border focus:border-gold/50 rounded-none"
+                required />
 
               </div>
               <div>
