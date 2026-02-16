@@ -11,11 +11,11 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(40_42%_56%_/_0.04)_0%,_transparent_70%)]" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <img
-          src={logo}
-          alt="PT Aurum Italia Nusantara logo"
-          className="mx-auto mt-16 mb-14 w-48 sm:w-56 md:w-64"
-        />
+        
+
+
+
+
 
         <h1 className="font-serif text-ivory text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mb-8">
           Connecting Indonesia's Gold Potential
@@ -33,16 +33,16 @@ const HeroSection = () => {
 
         <button
           onClick={() => scrollTo("#contact")}
-          className="border border-gold/50 text-gold hover:bg-gold/10 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300"
-        >
+          className="border border-gold/50 text-gold hover:bg-gold/10 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300">
+
           INVEST WITH US
         </button>
       </div>
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-navy to-transparent" />
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
