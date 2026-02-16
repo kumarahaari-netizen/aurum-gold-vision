@@ -14,7 +14,7 @@ const HeroSection = () => {
         <img
           src={logo}
           alt="PT Aurum Italia Nusantara logo"
-          className="mx-auto mb-10 w-48 sm:w-56 md:w-64"
+          className="mx-auto mt-16 mb-14 w-48 sm:w-56 md:w-64"
         />
 
         <h1 className="font-serif text-ivory text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mb-8">
