@@ -1,12 +1,12 @@
 import logo from "@/assets/logo.png";
 
 const quickLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About Us", href: "#about" },
-  { label: "Operations", href: "#operations" },
-  { label: "Investors", href: "#investors" },
-  { label: "Contact", href: "#contact" },
-];
+{ label: "Home", href: "#hero" },
+{ label: "About Us", href: "#about" },
+{ label: "Operations", href: "#operations" },
+{ label: "Investors", href: "#investors" },
+{ label: "Contact", href: "#contact" }];
+
 
 const Footer = () => {
   const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -32,17 +32,17 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-ivory text-sm mb-4 tracking-wide">Quick Links</h4>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.label}>
+              {quickLinks.map((link) =>
+              <li key={link.label}>
                   <a
-                    href={link.href}
-                    onClick={(e) => scrollTo(e, link.href)}
-                    className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300"
-                  >
+                  href={link.href}
+                  onClick={(e) => scrollTo(e, link.href)}
+                  className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300">
+
                     {link.label}
                   </a>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -56,21 +56,21 @@ const Footer = () => {
             </div>
             <a
               href="mailto:info@aurumitalia.co.id"
-              className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3 inline-block"
-            >
+              className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3 inline-block">
+
               info@aurumitalia.co.id
             </a>
           </div>
         </div>
 
         <div className="border-t border-ivory/5 pt-6">
-          <p className="text-ivory/25 font-sans text-xs leading-relaxed">
-            © 2025 PT Aurum Italia Nusantara. All activities are conducted in accordance with applicable Indonesian laws and regulations.
+          <p className="text-ivory/25 font-sans text-xs leading-relaxed"> All activities are conducted in accordance with applicable Indonesian laws and regulations.
+
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
