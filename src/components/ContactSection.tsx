@@ -24,9 +24,11 @@ const ContactSection = () => {
           <div className="fade-in">
             <h3 className="font-serif text-foreground text-xl mb-6">PT Aurum Italia Nusantara</h3>
             <div className="text-muted-foreground font-sans text-sm leading-relaxed space-y-1 mb-8">
-              <p>Treasury Tower Lt.11, SCBD District 8</p>
-              <p>Jl. Jend. Sudirman No. 52–53</p>
-              <p>South Jakarta, Indonesia</p>
+              <p>Jl. Tjilik Riwut Km 1 No. 1</p>
+              <p>
+              </p>
+              <p>
+              </p>
             </div>
             <p className="text-muted-foreground font-sans text-sm mb-8">
               Email:{" "}
@@ -44,13 +46,11 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name" className="text-foreground text-xs tracking-[0.1em] mb-2 block">NAME</Label>
-                <Input
-                  id="name"
-                  value={form.name}
+                <Input id="name" value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="bg-transparent border-border focus:border-gold/50 rounded-none"
-                  required
-                />
+                  required />
+
               </div>
               <div>
                 <Label htmlFor="email" className="text-foreground text-xs tracking-[0.1em] mb-2 block">EMAIL</Label>
@@ -60,8 +60,8 @@ const ContactSection = () => {
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="bg-transparent border-border focus:border-gold/50 rounded-none"
-                  required
-                />
+                  required />
+
               </div>
               <div>
                 <Label htmlFor="message" className="text-foreground text-xs tracking-[0.1em] mb-2 block">MESSAGE</Label>
@@ -71,21 +71,21 @@ const ContactSection = () => {
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   rows={5}
                   className="bg-transparent border-border focus:border-gold/50 rounded-none resize-none"
-                  required
-                />
+                  required />
+
               </div>
               <button
                 type="submit"
-                className="border border-gold/40 text-gold hover:bg-gold/10 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300"
-              >
+                className="border border-gold/40 text-gold hover:bg-gold/10 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300">
+
                 SUBMIT ENQUIRY
               </button>
             </form>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ContactSection;
