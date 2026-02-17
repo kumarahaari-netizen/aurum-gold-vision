@@ -42,9 +42,9 @@ Our role is centred on identifying, evaluating, and supporting gold and rare ea
                 alt="Gold mining operations in Indonesia"
                 className="w-full h-full object-cover" />
 
-              <div className="absolute bottom-6 left-6 right-6 text-ivory/80 text-xs tracking-[0.15em] font-sans bg-navy/60 backdrop-blur-sm px-3 py-2">
-                STRATEGIC MINERAL ASSETS
-              </div>
+              
+
+
             </div>
           </div>
         </div>
