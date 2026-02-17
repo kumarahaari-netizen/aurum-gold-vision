@@ -17,12 +17,7 @@ const AboutSection = () => {
             </p>
             <p className="text-muted-foreground font-sans leading-relaxed mb-10">The company operates through a select network of licensed local partners, enabling the connection of Indonesian resource opportunities with international market interests.
 
-
-Our role is centred on identifying, evaluating, and supporting gold and rare earth mineral initiatives that demonstrate commercial viability, regulatory alignment, and long-term value potential.
-
-
-
-            </p>
+Our role is centred on identifying, evaluating, and supporting gold and rare earth mineral initiatives that demonstrate commercial viability, regulatory alignment, and long-term value potential.</p>
 
             {/* Prospectus Card */}
             <div className="border border-border p-6 flex items-start gap-4">
@@ -40,9 +35,12 @@ Our role is centred on identifying, evaluating, and supporting gold and rare ea
           </div>
 
           {/* Right: Mining image */}
-          <div className="fade-in flex items-start">
-            <div className="w-full h-full overflow-hidden relative">
-              <img src={miningImage} alt="Gold mining operations in Indonesia" className="w-full h-full object-cover" />
+          <div className="fade-in flex items-center justify-center">
+            <div className="w-full aspect-square max-w-md overflow-hidden relative">
+              <img
+                src={miningImage}
+                alt="Gold mining operations in Indonesia"
+                className="w-full h-full object-cover" />
 
               <div className="absolute bottom-6 left-6 right-6 text-ivory/80 text-xs tracking-[0.15em] font-sans bg-navy/60 backdrop-blur-sm px-3 py-2">
                 STRATEGIC MINERAL ASSETS
@@ -51,6 +49,8 @@ Our role is centred on identifying, evaluating, and supporting gold and rare ea
           </div>
         </div>
       </div>
-    </section>);};
+    </section>);
+
+};
 
 export default AboutSection;

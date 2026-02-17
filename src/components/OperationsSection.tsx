@@ -1,9 +1,9 @@
 const focusAreas = [
-  "Gold exploration prospects and rare earth exploration prospects",
-  "Cooperation with authorised local partners",
-  "Structuring of compliant participation models",
-  "Coordination of commercial pathways for future production",
-];
+"Gold exploration prospects and rare earth exploration prospects",
+"Cooperation with authorised local partners",
+"Structuring of compliant participation models",
+"Coordination of commercial pathways for future production"];
+
 
 const OperationsSection = () => {
   return (
@@ -17,8 +17,9 @@ const OperationsSection = () => {
             <h2 className="font-serif text-ivory text-3xl md:text-4xl mb-8 leading-tight">
               Focused on Indonesia's<br />Mineral Wealth
             </h2>
-            <p className="text-ivory/50 font-sans leading-relaxed">
-              Our operational framework centres on identifying, evaluating, and structuring participation in gold and rare earth mineral opportunities across Indonesia. Every project is approached with institutional rigour and a commitment to sustainable, compliant practices.
+            <p className="text-ivory/50 font-sans leading-relaxed">Our operational framework centres on identifying, evaluating, and structuring participation in gold and rare earth mineral opportunities across Indonesia. Every project is approached with institutional rigour and a commitment to sustainable, compliant practices.
+
+PT Aurum Italia Nusantara collaborates with licensed concession holders, local operators, and industry stakeholders to support compliant project development
             </p>
           </div>
 
@@ -27,12 +28,11 @@ const OperationsSection = () => {
             <div className="border border-ivory/10 p-8">
               <h3 className="font-serif text-ivory text-xl mb-6">Operational Focus Areas</h3>
               <ul className="space-y-4">
-                {focusAreas.map((area, i) => (
-                  <li key={i} className="flex items-start gap-3">
+                {focusAreas.map((area, i) => <li key={i} className="flex items-start gap-3">
                     <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
                     <span className="text-ivory/60 font-sans text-sm leading-relaxed">{area}</span>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
           </div>
@@ -42,8 +42,8 @@ const OperationsSection = () => {
           Each opportunity is reviewed with emphasis on regulatory compliance, operational credibility, and sustainable economic value.
         </p>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default OperationsSection;
