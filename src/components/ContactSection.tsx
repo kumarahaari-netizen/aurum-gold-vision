@@ -19,10 +19,10 @@ const ContactSection = () => {
             <h3 className="font-serif text-foreground text-xl mb-6">PT Aurum Italia
 Nusantara</h3>
             <div className="text-muted-foreground font-sans text-sm leading-relaxed space-y-1 mb-8">
-              <p>Address: 
-Jl. Tjilik Riwut Km 1 No. 1
+              <p>Address:  Jl. Tjilik Riwut Km 1 No. 1
 Palangkaraya, Central Kalimantan 73112
-Indonesia
+Indonesia.
+
 
 
 
