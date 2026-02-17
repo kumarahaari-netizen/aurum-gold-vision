@@ -21,8 +21,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="PT Aurum Italia Nusantara" className="h-14 w-14 object-contain" />
+            <div className="gap-3 mb-4 flex-row flex items-end justify-start">
+              <img alt="PT Aurum Italia Nusantara" className="h-14 w-14 object-contain " src="/lovable-uploads/fdd6b1c1-f6f1-43ac-8670-b5ceafabbed8.svg" />
             </div>
             <p className="text-ivory/40 font-sans text-xs leading-relaxed max-w-xs">
               Connecting Indonesia's gold potential with global capital through disciplined partnerships and responsible practices.
