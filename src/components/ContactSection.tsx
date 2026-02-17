@@ -20,9 +20,9 @@ const ContactSection = () => {
 Nusantara</h3>
             <div className="text-muted-foreground font-sans text-sm leading-relaxed space-y-1 mb-8">
               <p>Address:
-Jl. Tjilik Riwut Km 1 No. 1
-Palangkaraya Central Kalimantan 73112
+Jl. Tjilik Riwut Km 1 No. 1 Palangkaraya Central Kalimantan 73112
 Indonesia.
+
               </p>
             </div>
             <p className="text-muted-foreground font-sans text-sm mb-8">
