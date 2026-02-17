@@ -56,7 +56,7 @@ Nusantara</h3>
 
           {/* Right: Form */}
           <div className="fade-in">
-            <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">CONTACT</p>
+            <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans text-left">CONTACT</p>
             <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-8 leading-tight">
               Get in Touch
             </h2>
