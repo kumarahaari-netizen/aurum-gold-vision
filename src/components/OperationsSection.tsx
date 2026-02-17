@@ -17,10 +17,9 @@ const OperationsSection = () => {
             <h2 className="font-serif text-ivory text-3xl md:text-4xl mb-8 leading-tight">
               Focused on Indonesia's<br />Mineral Wealth
             </h2>
-            <p className="text-ivory/50 font-sans leading-relaxed">Our operational framework centres on identifying, evaluating, and structuring participation in gold and rare earth mineral opportunities across Indonesia. Every project is approached with institutional rigour and a commitment to sustainable, compliant practices.
+            <p className="text-ivory/50 font-sans leading-relaxed">Our activities include the evaluation and participation in gold and rare earth mineral exploration and development opportunities across Indonesia.
 
-PT Aurum Italia Nusantara collaborates with licensed concession holders, local operators, and industry stakeholders to support compliant project development
-            </p>
+PT Aurum Italia Nusantara collaborates with licensed concession holders, local operators, and industry stakeholders to support compliant project development.</p>
           </div>
 
           {/* Right: Focus Areas Box */}
@@ -28,7 +27,8 @@ PT Aurum Italia Nusantara collaborates with licensed concession holders, local o
             <div className="border border-ivory/10 p-8">
               <h3 className="font-serif text-ivory text-xl mb-6">Operational Focus Areas</h3>
               <ul className="space-y-4">
-                {focusAreas.map((area, i) => <li key={i} className="flex items-start gap-3">
+                {focusAreas.map((area, i) =>
+                <li key={i} className="flex items-start gap-3">
                     <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
                     <span className="text-ivory/60 font-sans text-sm leading-relaxed">{area}</span>
                   </li>
