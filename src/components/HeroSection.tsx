@@ -1,5 +1,3 @@
-import logo from "@/assets/logo.png";
-
 const HeroSection = () => {
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
@@ -25,9 +23,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(43_80%_50%_/_0.06)_0%,_transparent_70%)]" />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 text-center">
-        <div className="mt-16 mb-14 flex justify-center">
-          <img src={logo} alt="PT Aurum Italia Nusantara" className="h-28 md:h-36 w-auto" />
-        </div>
+
+
 
         <h1 className="font-serif text-ivory text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mb-8">
           Connecting Indonesia's Gold Potential
