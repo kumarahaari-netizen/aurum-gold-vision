@@ -12,7 +12,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-background">
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">CONTACT</p>
         <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-12 leading-tight">
           Get in Touch
