@@ -26,7 +26,7 @@ const principles = [
 const InvestorRelationsSection = () => {
   return (
     <section id="investors" className="py-24 md:py-32 bg-background">
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 text-center">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
         <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">INVESTOR RELATIONS</p>
         <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-4 leading-tight">
           Guiding Principles

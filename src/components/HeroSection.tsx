@@ -22,7 +22,7 @@ const HeroSection = () => {
       {/* Subtle radial gradient overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(43_80%_50%_/_0.06)_0%,_transparent_70%)]" />
 
-      <div className="relative z-10 max-w-[1600px] mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-6 text-center">
 
 
 
