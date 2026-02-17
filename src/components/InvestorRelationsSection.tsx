@@ -72,8 +72,8 @@ const InvestorRelationsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 * i }}
               viewport={{ once: true, amount: 0.2 }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="flex flex-col items-center text-center group border border-border bg-background overflow-hidden hover:border-gold hover:shadow-[0_8px_30px_-8px_hsl(var(--gold)/0.2)] transition-all duration-500 cursor-pointer"
+              whileHover={{ scale: 1.05, transition: { duration: 0.4 } }}
+              className="flex flex-col items-center text-center group border border-border bg-background overflow-hidden hover:border-gold hover:shadow-[0_8px_30px_-8px_hsl(var(--gold)/0.2)] transition-all duration-500"
             >
               {/* Image */}
               <div className="w-full h-40 overflow-hidden relative">
