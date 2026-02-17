@@ -13,11 +13,6 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-16 md:py-24 bg-background">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">CONTACT</p>
-        <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-12 leading-tight">
-          Get in Touch
-        </h2>
-
         <div className="grid md:grid-cols-2 gap-16 items-stretch">
           {/* Left: Details */}
           <div className="fade-in flex flex-col">
@@ -61,6 +56,10 @@ Indonesia
 
           {/* Right: Form */}
           <div className="fade-in">
+            <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">CONTACT</p>
+            <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-8 leading-tight">
+              Get in Touch
+            </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name" className="text-foreground text-xs tracking-[0.1em] mb-2 block">NAME</Label>

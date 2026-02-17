@@ -14,7 +14,7 @@ const OperationsSection = () => {
         <div className="grid md:grid-cols-2 gap-16 mt-8">
           {/* Left: Intro */}
           <div className="fade-in">
-            <h2 className="font-serif text-ivory text-3xl md:text-4xl mb-8 leading-tight">
+            <h2 className="font-serif text-ivory text-3xl md:text-4xl mb-8 leading-relaxed">
               Focused on Indonesia's<br />Mineral Wealth
             </h2>
             <p className="text-ivory/50 font-sans leading-relaxed">Our activities include the evaluation and participation in gold and rare earth mineral exploration and development opportunities across Indonesia.
