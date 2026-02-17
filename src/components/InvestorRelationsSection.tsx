@@ -35,14 +35,14 @@ const InvestorRelationsSection = () => {
           Our approach to investor engagement is underpinned by four core principles that shape every decision and partnership we pursue.
         </p>
 
-        <div className="fade-in grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="fade-in grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {principles.map((p) => (
-            <div key={p.title} className="flex flex-col items-center text-center group border border-border p-6 md:p-8">
-              <div className="mb-4 text-gold group-hover:text-gold/80 transition-colors duration-300">
-                <p.icon size={40} strokeWidth={1.5} />
+            <div key={p.title} className="flex flex-col items-center text-center group border border-border bg-background p-8 md:p-10 hover:border-gold hover:bg-gold/5 hover:shadow-[0_8px_30px_-8px_hsl(var(--gold)/0.2)] transition-all duration-500 cursor-pointer">
+              <div className="mb-5 text-gold group-hover:scale-110 transition-transform duration-500">
+                <p.icon size={44} strokeWidth={1.3} />
               </div>
-              <h3 className="font-serif text-foreground text-sm md:text-base mb-2">{p.title}</h3>
-              <p className="text-muted-foreground text-xs leading-relaxed">{p.desc}</p>
+              <h3 className="font-serif text-foreground text-base md:text-lg mb-3 leading-snug">{p.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
