@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.svg";
 import { MapPin } from "lucide-react";
 
 const quickLinks = [
@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="PT Aurum Italia Nusantara" className="h-12 w-auto" />
+              <img src={logo} alt="PT Aurum Italia Nusantara" className="h-14 w-14 object-contain" />
             </div>
             <p className="text-ivory/40 font-sans text-xs leading-relaxed max-w-xs">
               Connecting Indonesia's gold potential with global capital through disciplined partnerships and responsible practices.
