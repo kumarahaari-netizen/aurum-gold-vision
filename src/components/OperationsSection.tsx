@@ -77,7 +77,7 @@ const OperationsSection = () => {
         </div>
 
         {/* Photo Gallery — Modern staggered layout */}
-        <div className="mt-16 grid grid-cols-3 gap-4 md:gap-6 items-end">
+        <div className="mt-16 grid grid-cols-3 gap-4 md:gap-6">
           {images.map((img, i) => (
             <motion.div
               key={i}
@@ -86,10 +86,7 @@ const OperationsSection = () => {
               transition={{ duration: 0.8, delay: 0.15 * i }}
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -8 }}
-              className={`relative group overflow-hidden ${
-                i === 1 ? "row-span-1 -mt-8" : ""
-              }`}
-              style={{ height: i === 1 ? "340px" : "280px" }}
+              className="relative group overflow-hidden h-[300px]"
             >
               <img
                 src={img.src}

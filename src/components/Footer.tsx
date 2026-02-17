@@ -17,66 +17,43 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-navy py-12 border-t border-ivory/5 overflow-hidden">
-      {/* Multi-layer pattern design */}
+      {/* Wavy stripe pattern - multiple flowing waves */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" preserveAspectRatio="none" viewBox="0 0 1440 400">
+        <defs>
+          <linearGradient id="waveGold1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="hsl(43, 80%, 50%)" stopOpacity="0.06" />
+            <stop offset="50%" stopColor="hsl(43, 80%, 50%)" stopOpacity="0.12" />
+            <stop offset="100%" stopColor="hsl(43, 80%, 50%)" stopOpacity="0.04" />
+          </linearGradient>
+          <linearGradient id="waveGold2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="hsl(43, 80%, 50%)" stopOpacity="0.04" />
+            <stop offset="50%" stopColor="hsl(43, 80%, 50%)" stopOpacity="0.08" />
+            <stop offset="100%" stopColor="hsl(43, 80%, 50%)" stopOpacity="0.06" />
+          </linearGradient>
+        </defs>
+        {/* Wave 1 */}
+        <path d="M0,80 C240,140 480,20 720,80 C960,140 1200,20 1440,80 L1440,100 C1200,40 960,160 720,100 C480,40 240,160 0,100 Z" fill="url(#waveGold1)" />
+        {/* Wave 2 */}
+        <path d="M0,140 C320,200 640,100 960,160 C1120,190 1280,120 1440,150 L1440,170 C1280,140 1120,210 960,180 C640,120 320,220 0,160 Z" fill="url(#waveGold2)" />
+        {/* Wave 3 */}
+        <path d="M0,220 C200,260 400,200 600,240 C800,280 1000,210 1200,250 C1320,270 1380,240 1440,260 L1440,280 C1380,260 1320,290 1200,270 C1000,230 800,300 600,260 C400,220 200,280 0,240 Z" fill="url(#waveGold1)" />
+        {/* Wave 4 */}
+        <path d="M0,300 C360,340 720,280 1080,320 C1260,340 1360,310 1440,330 L1440,350 C1360,330 1260,360 1080,340 C720,300 360,360 0,320 Z" fill="url(#waveGold2)" />
+        {/* Wave 5 - subtle bottom */}
+        <path d="M0,360 C180,380 360,350 540,370 C720,390 900,355 1080,375 C1260,395 1350,365 1440,380 L1440,400 C1350,385 1260,400 1080,395 C900,375 720,400 540,390 C360,370 180,400 0,380 Z" fill="url(#waveGold1)" />
+      </svg>
 
-      {/* Layer 1: Fine dot grid */}
-      <div
-        className="absolute inset-0 opacity-[0.04] pointer-events-none"
-        style={{
-          backgroundImage: "radial-gradient(circle, hsl(var(--gold)) 1px, transparent 1px)",
-          backgroundSize: "20px 20px",
-        }}
-      />
-
-      {/* Layer 2: Diagonal lines */}
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, hsl(var(--gold) / 0.3) 30px, hsl(var(--gold) / 0.3) 31px)`,
-        }}
-      />
-
-      {/* Layer 3: Reverse diagonal lines for cross-hatch */}
-      <div
-        className="absolute inset-0 opacity-[0.02] pointer-events-none"
-        style={{
-          backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 30px, hsl(var(--gold) / 0.3) 30px, hsl(var(--gold) / 0.3) 31px)`,
-        }}
-      />
-
-      {/* Layer 4: Horizontal accent lines */}
-      <div
-        className="absolute inset-0 opacity-[0.025] pointer-events-none"
-        style={{
-          backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 60px, hsl(var(--ivory) / 0.2) 60px, hsl(var(--ivory) / 0.2) 61px)`,
-        }}
-      />
-
-      {/* Top gold accent lines */}
-      <div className="absolute top-0 left-6 md:left-12 w-24 h-[2px] bg-gold/40" />
-      <div className="absolute top-0 right-6 md:right-12 w-16 h-[2px] bg-gold/20" />
-      <div className="absolute top-[3px] left-6 md:left-12 w-16 h-[1px] bg-gold/15" />
-
-      {/* Corner geometric accents */}
-      <div className="absolute top-4 left-4 w-8 h-8 pointer-events-none opacity-20">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-gold" />
-        <div className="absolute top-0 left-0 h-full w-[1px] bg-gold" />
-      </div>
-      <div className="absolute top-4 right-4 w-8 h-8 pointer-events-none opacity-20">
-        <div className="absolute top-0 right-0 w-full h-[1px] bg-gold" />
-        <div className="absolute top-0 right-0 h-full w-[1px] bg-gold" />
-      </div>
-      <div className="absolute bottom-4 left-4 w-8 h-8 pointer-events-none opacity-20">
-        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gold" />
-        <div className="absolute bottom-0 left-0 h-full w-[1px] bg-gold" />
-      </div>
-      <div className="absolute bottom-4 right-4 w-8 h-8 pointer-events-none opacity-20">
-        <div className="absolute bottom-0 right-0 w-full h-[1px] bg-gold" />
-        <div className="absolute bottom-0 right-0 h-full w-[1px] bg-gold" />
+      {/* Flowing horizontal stripe lines */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute w-[200%] h-[1px] top-[15%] left-0 bg-gradient-to-r from-transparent via-gold/10 to-transparent" style={{ transform: 'rotate(-2deg)' }} />
+        <div className="absolute w-[200%] h-[1px] top-[30%] left-[-20%] bg-gradient-to-r from-transparent via-gold/8 to-transparent" style={{ transform: 'rotate(1.5deg)' }} />
+        <div className="absolute w-[200%] h-[1px] top-[50%] left-[-10%] bg-gradient-to-r from-transparent via-gold/6 to-transparent" style={{ transform: 'rotate(-1deg)' }} />
+        <div className="absolute w-[200%] h-[1px] top-[70%] left-0 bg-gradient-to-r from-transparent via-gold/10 to-transparent" style={{ transform: 'rotate(2deg)' }} />
+        <div className="absolute w-[200%] h-[1px] top-[85%] left-[-15%] bg-gradient-to-r from-transparent via-gold/7 to-transparent" style={{ transform: 'rotate(-1.5deg)' }} />
       </div>
 
-      {/* Radial glow accent */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-[radial-gradient(ellipse_at_top,_hsl(var(--gold)/0.06)_0%,_transparent_70%)] pointer-events-none" />
+      {/* Top gold accent */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
         <motion.div
