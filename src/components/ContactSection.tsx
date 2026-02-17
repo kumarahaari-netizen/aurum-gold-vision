@@ -18,10 +18,10 @@ const ContactSection = () => {
           <div className="fade-in flex flex-col">
             <h3 className="font-serif text-foreground text-xl mb-6">PT Aurum Italia Nusantara</h3>
             <div className="text-muted-foreground font-sans text-sm leading-relaxed space-y-1 mb-8">
-              <p>Jl. Tjilik Riwut Km 1 No. 1
-Palangkaraya
-Central Kalimantan 73112
-Indonesia
+              <p>Address:
+Jl. Tjilik Riwut Km 1 No. 1 Palangkaraya Central Kalimantan 73112 Indonesia
+
+
               </p>
             </div>
             <p className="text-muted-foreground font-sans text-sm mb-8">
@@ -38,8 +38,8 @@ Indonesia
               href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full flex-1 min-h-[120px] border border-gold/20 shadow-md overflow-hidden relative group mt-4"
-            >
+              className="block w-full flex-1 min-h-[120px] border border-gold/20 shadow-md overflow-hidden relative group mt-4">
+
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0!2d113.9213!3d-2.2096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de19ee3824ca38b%3A0x2a491e80604a1ae0!2sJl.+Tjilik+Riwut+No.Km.+1%2C+Palangka+Raya%2C+Kalimantan+Tengah+73112%2C+Indonesia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                 width="100%"
@@ -49,8 +49,8 @@ Indonesia
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="PT Aurum Italia Nusantara Location"
-                className="pointer-events-none absolute inset-0"
-              />
+                className="pointer-events-none absolute inset-0" />
+
             </a>
           </div>
 
@@ -80,8 +80,8 @@ Indonesia
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ContactSection;
