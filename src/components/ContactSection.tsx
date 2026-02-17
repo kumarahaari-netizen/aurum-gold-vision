@@ -39,20 +39,25 @@ Nusantara</h3>
 
             </p>
             {/* Map fills remaining space */}
-            <a href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia" target="_blank" rel="noopener noreferrer" className="block w-full flex-1 min-h-[120px] border border-gold/20 shadow-md overflow-hidden relative group mt-4">
-
+            <div className="block w-full flex-1 min-h-[180px] border border-gold/20 shadow-lg overflow-hidden relative mt-4 bg-muted/30">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0!2d113.9213!3d-2.2096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de19ee3824ca38b%3A0x2a491e80604a1ae0!2sJl.+Tjilik+Riwut+No.Km.+1%2C+Palangka+Raya%2C+Kalimantan+Tengah+73112%2C+Indonesia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
-                style={{ border: 0, filter: "sepia(0.3) hue-rotate(190deg) saturate(0.8)" }}
+                style={{ border: 0, filter: "grayscale(0.4) contrast(1.1) brightness(0.95)" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="PT Aurum Italia Nusantara Location"
-                className="pointer-events-none absolute inset-0" />
-
-            </a>
+                className="absolute inset-0"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/80 to-transparent px-4 py-3 pointer-events-none">
+                <p className="text-foreground/80 text-xs font-sans tracking-wide flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gold"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Palangkaraya, Central Kalimantan
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Right: Form */}
