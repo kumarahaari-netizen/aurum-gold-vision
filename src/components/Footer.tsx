@@ -1,4 +1,5 @@
 import { MapPin } from "lucide-react";
+import { motion } from "framer-motion";
 
 const quickLinks = [
   { label: "Home", href: "#hero" },
@@ -16,19 +17,75 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-navy py-12 border-t border-ivory/5 overflow-hidden">
-      {/* Decorative dot pattern */}
+      {/* Multi-layer pattern design */}
+
+      {/* Layer 1: Fine dot grid */}
       <div
-        className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none"
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
           backgroundImage: "radial-gradient(circle, hsl(var(--gold)) 1px, transparent 1px)",
-          backgroundSize: "24px 24px",
+          backgroundSize: "20px 20px",
         }}
       />
-      {/* Decorative gold line accent */}
+
+      {/* Layer 2: Diagonal lines */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, hsl(var(--gold) / 0.3) 30px, hsl(var(--gold) / 0.3) 31px)`,
+        }}
+      />
+
+      {/* Layer 3: Reverse diagonal lines for cross-hatch */}
+      <div
+        className="absolute inset-0 opacity-[0.02] pointer-events-none"
+        style={{
+          backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 30px, hsl(var(--gold) / 0.3) 30px, hsl(var(--gold) / 0.3) 31px)`,
+        }}
+      />
+
+      {/* Layer 4: Horizontal accent lines */}
+      <div
+        className="absolute inset-0 opacity-[0.025] pointer-events-none"
+        style={{
+          backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 60px, hsl(var(--ivory) / 0.2) 60px, hsl(var(--ivory) / 0.2) 61px)`,
+        }}
+      />
+
+      {/* Top gold accent lines */}
       <div className="absolute top-0 left-6 md:left-12 w-24 h-[2px] bg-gold/40" />
+      <div className="absolute top-0 right-6 md:right-12 w-16 h-[2px] bg-gold/20" />
+      <div className="absolute top-[3px] left-6 md:left-12 w-16 h-[1px] bg-gold/15" />
+
+      {/* Corner geometric accents */}
+      <div className="absolute top-4 left-4 w-8 h-8 pointer-events-none opacity-20">
+        <div className="absolute top-0 left-0 w-full h-[1px] bg-gold" />
+        <div className="absolute top-0 left-0 h-full w-[1px] bg-gold" />
+      </div>
+      <div className="absolute top-4 right-4 w-8 h-8 pointer-events-none opacity-20">
+        <div className="absolute top-0 right-0 w-full h-[1px] bg-gold" />
+        <div className="absolute top-0 right-0 h-full w-[1px] bg-gold" />
+      </div>
+      <div className="absolute bottom-4 left-4 w-8 h-8 pointer-events-none opacity-20">
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gold" />
+        <div className="absolute bottom-0 left-0 h-full w-[1px] bg-gold" />
+      </div>
+      <div className="absolute bottom-4 right-4 w-8 h-8 pointer-events-none opacity-20">
+        <div className="absolute bottom-0 right-0 w-full h-[1px] bg-gold" />
+        <div className="absolute bottom-0 right-0 h-full w-[1px] bg-gold" />
+      </div>
+
+      {/* Radial glow accent */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-[radial-gradient(ellipse_at_top,_hsl(var(--gold)/0.06)_0%,_transparent_70%)] pointer-events-none" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10"
+        >
           {/* Brand */}
           <div>
             <div className="gap-3 mb-4 flex-row flex items-end justify-start">
@@ -87,12 +144,16 @@ const Footer = () => {
               View on Map
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Bottom bar with decorative divider */}
         <div className="relative border-t border-ivory/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Small diamond accent on the divider */}
           <div className="absolute -top-[5px] left-1/2 -translate-x-1/2 w-2.5 h-2.5 rotate-45 bg-gold/30 border border-ivory/10" />
+          {/* Additional diamonds */}
+          <div className="absolute -top-[3px] left-1/2 -translate-x-1/2 ml-6 w-1.5 h-1.5 rotate-45 bg-gold/15" />
+          <div className="absolute -top-[3px] left-1/2 -translate-x-1/2 -ml-6 w-1.5 h-1.5 rotate-45 bg-gold/15" />
+
           <p className="text-ivory/25 font-sans text-xs leading-relaxed">
             All activities are conducted in accordance with applicable Indonesian laws and regulations.
           </p>
