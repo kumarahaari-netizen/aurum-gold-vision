@@ -34,7 +34,7 @@ const Navigation = () => {
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-16">
         <a href="#hero" onClick={(e) => handleClick(e, "#hero")} className="flex items-center gap-2">
-          <img src={logo} alt="PT Aurum Italia Nusantara" className="h-12 w-12 object-contain" />
+          <img alt="PT Aurum Italia Nusantara" className="h-12 w-12 object-contain" src="/lovable-uploads/ce8906e1-86ae-4e98-bc2a-41419ccbebea.svg" />
           <span className="font-serif text-ivory text-sm md:text-base tracking-wider hidden sm:inline">PT Aurum Italia Nusantara</span>
         </a>
         {/* Desktop */}
