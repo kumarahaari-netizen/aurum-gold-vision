@@ -20,9 +20,9 @@ const ContactSection = () => {
 Nusantara</h3>
             <div className="text-muted-foreground font-sans text-sm leading-relaxed space-y-1 mb-8">
               <p>Address:
-Jl. Tjilik Riwut Km 1 No. 1 Palangkaraya Central Kalimantan 73112 Indonesia
-
-
+Jl. Tjilik Riwut Km 1 No. 1
+Palangkaraya Central Kalimantan 73112
+Indonesia.
               </p>
             </div>
             <p className="text-muted-foreground font-sans text-sm mb-8">
@@ -31,8 +31,8 @@ Jl. Tjilik Riwut Km 1 No. 1 Palangkaraya Central Kalimantan 73112 Indonesia
                 info@aurumitalia.co.id
               </a>
             </p>
-            <p className="text-muted-foreground/60 font-sans text-xs leading-relaxed mb-4">
-              For business and investment enquiries, please use the contact form or reach us directly via email. We welcome institutional and qualified investor dialogue.
+            <p className="text-muted-foreground/60 font-sans text-xs leading-relaxed mb-4">For business and investment enquiries, please use the contact form or reach us directly via email. We welcome institutional and qualified investor dialogue.
+
             </p>
             {/* Map fills remaining space */}
             <a href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia"
