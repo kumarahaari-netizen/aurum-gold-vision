@@ -37,9 +37,9 @@ const InvestorRelationsSection = () => {
 
         <div className="fade-in grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {principles.map((p) => (
-            <div key={p.title} className="flex flex-col items-center text-center group">
-              <div className="mb-4 text-gold/70 group-hover:text-gold transition-colors duration-300">
-                <p.icon size={32} strokeWidth={1} />
+            <div key={p.title} className="flex flex-col items-center text-center group border border-border p-6 md:p-8">
+              <div className="mb-4 text-gold group-hover:text-gold/80 transition-colors duration-300">
+                <p.icon size={40} strokeWidth={1.5} />
               </div>
               <h3 className="font-serif text-foreground text-sm md:text-base mb-2">{p.title}</h3>
               <p className="text-muted-foreground text-xs leading-relaxed">{p.desc}</p>

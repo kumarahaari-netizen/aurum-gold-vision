@@ -30,11 +30,11 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="md:text-center md:justify-self-center">
+          <div>
             <h4 className="font-serif text-ivory text-sm mb-4 tracking-wide">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) =>
-              <li key={link.label}>
+              <li key={link.label} className="text-left">
                   <a
                   href={link.href}
                   onClick={(e) => scrollTo(e, link.href)}

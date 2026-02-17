@@ -9,7 +9,7 @@ const AboutSection = () => {
           {/* Left: Text */}
           <div className="fade-in">
             <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">ABOUT US</p>
-            <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-8 leading-tight">
+            <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-8 leading-relaxed">
               Strategic Vision,<br />Disciplined Execution
             </h2>
             <p className="text-muted-foreground font-sans leading-relaxed mb-6">PT Aurum Italia Nusantara is an Indonesia-based company focused on gold and rare earth mineral ventures, mining partnerships, and strategic investment activities.
@@ -36,7 +36,7 @@ Our role is centred on identifying, evaluating, and supporting gold and rare ea
 
           {/* Right: Mining image */}
           <div className="fade-in flex items-center justify-center">
-            <div className="w-full aspect-square max-w-md overflow-hidden relative">
+            <div className="w-full aspect-[3/4] max-w-md overflow-hidden relative">
               <img
                 src={miningImage}
                 alt="Gold mining operations in Indonesia"
