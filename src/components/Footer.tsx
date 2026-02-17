@@ -60,6 +60,11 @@ const Footer = () => {
               info@aurumitalia.co.id
             </a>
             <a
+              href="tel:+628123456789"
+              className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-1 block">
+              +62 812 3456 7890
+            </a>
+            <a
               href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia"
               target="_blank"
               rel="noopener noreferrer"
