@@ -8,7 +8,7 @@ const focusAreas = [
 const OperationsSection = () => {
   return (
     <section id="operations" className="py-24 md:py-32 bg-navy">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-12">
         <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">OPERATIONS & PROJECTS</p>
 
         <div className="grid md:grid-cols-2 gap-16 mt-8">
