@@ -11,8 +11,8 @@ const HeroSection = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
+        className="absolute inset-0 w-full h-full object-cover">
+
         <source src="/mining-hero.mp4" type="video/mp4" />
       </video>
 
@@ -32,8 +32,8 @@ const HeroSection = () => {
           <span className="text-gold">with Global Capital</span>
         </h1>
 
-        <p className="text-ivory/60 font-sans text-base md:text-lg max-w-2xl mx-auto mb-4 leading-relaxed">
-          PT Aurum Italia Nusantara is an Indonesia-based company engaged in gold and rare earth mineral ventures, mining partnerships, and strategic investment activities.
+        <p className="text-ivory/60 font-sans text-base md:text-lg max-w-2xl mx-auto mb-4 leading-relaxed">PT Aurum Italia Nusantara is an Indonesia-based company engaged in gold and rare earth mineral ventures, mining partnerships, and strategic investment activities.
+
         </p>
 
         <p className="text-ivory/40 font-sans text-sm max-w-xl mx-auto mb-12 leading-relaxed">
@@ -49,8 +49,8 @@ const HeroSection = () => {
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-navy to-transparent" />
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
