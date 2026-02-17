@@ -21,12 +21,6 @@ const ContactSection = () => {
 Nusantara</h3>
             <div className="text-muted-foreground font-sans text-sm leading-relaxed space-y-1 mb-8">
               <p>Address: Jl. Tjilik Riwut Km 1 No. 1 Palangkaraya, Central Kalimantan 73112 Indonesia
-
-
-
-
-
-
               </p>
             </div>
             <p className="text-muted-foreground font-sans text-sm mb-2">
@@ -38,7 +32,6 @@ Nusantara</h3>
               <a href="tel:+628123456789" className="text-gold hover:text-gold/80 transition-colors">+62 812 3456 7890</a>
             </p>
             <p className="text-muted-foreground/60 font-sans text-xs leading-relaxed mb-4">For business and investment enquiries, please use the contact form or reach us directly via email. We welcome institutional and qualified investor dialogue.
-
             </p>
             {/* Map fills remaining space */}
             <div className="block w-full flex-1 min-h-[180px] border border-gold/20 shadow-lg overflow-hidden relative mt-4 bg-muted/30">
@@ -63,11 +56,11 @@ Nusantara</h3>
           </div>
 
           {/* Right: Form */}
-          <div className="fade-in">
+          <div className="fade-in flex flex-col">
             <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-8 leading-tight">
               Get in Touch
             </h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="flex flex-col flex-1 space-y-6">
               <div>
                 <Label htmlFor="name" className="text-foreground text-xs tracking-[0.1em] mb-2 block">NAME</Label>
                 <Input id="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="bg-transparent border-border focus:border-gold/50 rounded-none" required />
@@ -76,19 +69,21 @@ Nusantara</h3>
                 <Label htmlFor="email" className="text-foreground text-xs tracking-[0.1em] mb-2 block">EMAIL</Label>
                 <Input id="email" type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="bg-transparent border-border focus:border-gold/50 rounded-none" required />
               </div>
-              <div>
+              <div className="flex-1 flex flex-col">
                 <Label htmlFor="message" className="text-foreground text-xs tracking-[0.1em] mb-2 block">MESSAGE</Label>
-                <Textarea id="message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} rows={5} className="bg-transparent border-border focus:border-gold/50 rounded-none resize-none" required />
+                <Textarea id="message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="bg-transparent border-border focus:border-gold/50 rounded-none resize-none flex-1 min-h-[120px]" required />
               </div>
-              <button type="submit" className="bg-navy text-gold border border-navy hover:bg-navy/80 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300">
-                SUBMIT ENQUIRY
-              </button>
+              <div className="mt-auto">
+                <button type="submit" className="bg-navy text-gold border border-navy hover:bg-navy/80 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300 w-full">
+                  SUBMIT ENQUIRY
+                </button>
+              </div>
             </form>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default ContactSection;

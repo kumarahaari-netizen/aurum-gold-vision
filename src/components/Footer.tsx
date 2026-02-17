@@ -1,13 +1,12 @@
-import logo from "@/assets/logo-new.svg";
 import { MapPin } from "lucide-react";
 
 const quickLinks = [
-{ label: "Home", href: "#hero" },
-{ label: "About Us", href: "#about" },
-{ label: "Operations", href: "#operations" },
-{ label: "Investors", href: "#investors" },
-{ label: "Contact", href: "#contact" }];
-
+  { label: "Home", href: "#hero" },
+  { label: "About Us", href: "#about" },
+  { label: "Operations", href: "#operations" },
+  { label: "Investors", href: "#investors" },
+  { label: "Contact", href: "#contact" },
+];
 
 const Footer = () => {
   const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -16,13 +15,24 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-navy py-12 border-t border-ivory/5">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+    <footer className="relative bg-navy py-12 border-t border-ivory/5 overflow-hidden">
+      {/* Decorative dot pattern */}
+      <div
+        className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: "radial-gradient(circle, hsl(var(--gold)) 1px, transparent 1px)",
+          backgroundSize: "24px 24px",
+        }}
+      />
+      {/* Decorative gold line accent */}
+      <div className="absolute top-0 left-6 md:left-12 w-24 h-[2px] bg-gold/40" />
+
+      <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
             <div className="gap-3 mb-4 flex-row flex items-end justify-start">
-              <img alt="PT Aurum Italia Nusantara" className="h-14 w-14 object-contain " src="/lovable-uploads/fdd6b1c1-f6f1-43ac-8670-b5ceafabbed8.svg" />
+              <img alt="PT Aurum Italia Nusantara" className="h-14 w-14 object-contain" src="/lovable-uploads/fdd6b1c1-f6f1-43ac-8670-b5ceafabbed8.svg" />
             </div>
             <p className="text-ivory/40 font-sans text-xs leading-relaxed max-w-xs">
               Connecting Indonesia's gold potential with global capital through disciplined partnerships and responsible practices.
@@ -33,16 +43,17 @@ const Footer = () => {
           <div className="flex flex-col items-center">
             <h4 className="font-serif text-ivory text-sm mb-4 tracking-wide text-center">Quick Links</h4>
             <ul className="space-y-2">
-              {quickLinks.map((link) =>
-              <li key={link.label} className="text-left">
+              {quickLinks.map((link) => (
+                <li key={link.label} className="text-left">
                   <a
-                  href={link.href}
-                  onClick={(e) => scrollTo(e, link.href)}
-                  className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300">
+                    href={link.href}
+                    onClick={(e) => scrollTo(e, link.href)}
+                    className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300"
+                  >
                     {link.label}
                   </a>
                 </li>
-              )}
+              ))}
             </ul>
           </div>
 
@@ -56,27 +67,32 @@ const Footer = () => {
             </div>
             <a
               href="mailto:info@aurumitalia.co.id"
-              className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3 inline-block">
+              className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3 inline-block"
+            >
               info@aurumitalia.co.id
             </a>
             <a
               href="tel:+628123456789"
-              className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-1 block">
+              className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-1 block"
+            >
               +62 812 3456 7890
             </a>
             <a
               href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3">
-
+              className="flex items-center gap-1.5 text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3"
+            >
               <MapPin size={14} strokeWidth={1.5} />
               View on Map
             </a>
           </div>
         </div>
 
-        <div className="border-t border-ivory/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* Bottom bar with decorative divider */}
+        <div className="relative border-t border-ivory/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          {/* Small diamond accent on the divider */}
+          <div className="absolute -top-[5px] left-1/2 -translate-x-1/2 w-2.5 h-2.5 rotate-45 bg-gold/30 border border-ivory/10" />
           <p className="text-ivory/25 font-sans text-xs leading-relaxed">
             All activities are conducted in accordance with applicable Indonesian laws and regulations.
           </p>
@@ -85,8 +101,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>);
-
+    </footer>
+  );
 };
 
 export default Footer;

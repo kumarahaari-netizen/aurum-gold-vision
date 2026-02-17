@@ -1,25 +1,33 @@
 import { Shield, BarChart3, AlertTriangle, Target } from "lucide-react";
+import investorCompliance from "@/assets/investor-compliance.jpg";
+import investorClarity from "@/assets/investor-clarity.jpg";
+import investorRisk from "@/assets/investor-risk.jpg";
+import investorAlignment from "@/assets/investor-alignment.jpg";
 
 const principles = [
   {
     icon: Shield,
     title: "Regulatory Compliance",
     desc: "Full alignment with Indonesian regulatory frameworks",
+    image: investorCompliance,
   },
   {
     icon: BarChart3,
     title: "Commercial Clarity",
     desc: "Transparent structuring of all investment pathways",
+    image: investorClarity,
   },
   {
     icon: AlertTriangle,
     title: "Risk-Aware Structuring",
     desc: "Measured approach to opportunity evaluation",
+    image: investorRisk,
   },
   {
     icon: Target,
     title: "Long-Term Alignment",
     desc: "Partnerships built for sustained value creation",
+    image: investorAlignment,
   },
 ];
 
@@ -37,12 +45,24 @@ const InvestorRelationsSection = () => {
 
         <div className="fade-in grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {principles.map((p) => (
-            <div key={p.title} className="flex flex-col items-center text-center group border border-border bg-background p-8 md:p-10 hover:border-gold hover:bg-gold/5 hover:shadow-[0_8px_30px_-8px_hsl(var(--gold)/0.2)] transition-all duration-500 cursor-pointer">
-              <div className="mb-5 text-gold group-hover:scale-110 transition-transform duration-500">
-                <p.icon size={44} strokeWidth={1.3} />
+            <div key={p.title} className="flex flex-col items-center text-center group border border-border bg-background overflow-hidden hover:border-gold hover:shadow-[0_8px_30px_-8px_hsl(var(--gold)/0.2)] transition-all duration-500 cursor-pointer">
+              {/* Image */}
+              <div className="w-full h-40 overflow-hidden relative">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
               </div>
-              <h3 className="font-serif text-foreground text-base md:text-lg mb-3 leading-snug">{p.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+              {/* Content */}
+              <div className="p-6 pt-4 flex flex-col items-center">
+                <div className="mb-4 text-gold group-hover:scale-110 transition-transform duration-500">
+                  <p.icon size={36} strokeWidth={1.3} />
+                </div>
+                <h3 className="font-serif text-foreground text-base md:text-lg mb-3 leading-snug">{p.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+              </div>
             </div>
           ))}
         </div>

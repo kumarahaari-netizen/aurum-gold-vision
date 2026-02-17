@@ -12,12 +12,11 @@ const AboutSection = () => {
             <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-8 leading-relaxed">
               Strategic Vision,<br />Disciplined Execution
             </h2>
-            <p className="text-muted-foreground font-sans leading-relaxed mb-6">PT Aurum Italia Nusantara is an Indonesia-based company focused on gold and rare earth mineral ventures, mining partnerships, and strategic investment activities.
-
+            <p className="text-muted-foreground font-sans leading-relaxed mb-6">PT Aurum Italia Nusantara is an Indonesia-based company focused on gold and rare earth mineral ventures, mining partnerships, and strategic investment activities.
             </p>
-            <p className="text-muted-foreground font-sans leading-relaxed mb-10">The company operates through a select network of licensed local partners, enabling the connection of Indonesian resource opportunities with international market interests.
+            <p className="text-muted-foreground font-sans leading-relaxed mb-10">The company operates through a select network of licensed local partners, enabling the connection of Indonesian resource opportunities with international market interests.
 
-Our role is centred on identifying, evaluating, and supporting gold and rare earth mineral initiatives that demonstrate commercial viability, regulatory alignment, and long-term value potential.</p>
+Our role is centred on identifying, evaluating, and supporting gold and rare earth mineral initiatives that demonstrate commercial viability, regulatory alignment, and long-term value potential.</p>
 
             {/* Prospectus Card */}
             <div className="border border-border p-6 flex items-start gap-4">
@@ -34,23 +33,52 @@ Our role is centred on identifying, evaluating, and supporting gold and rare ea
             </div>
           </div>
 
-          {/* Right: Mining image */}
+          {/* Right: Mining image with decorative pattern frame */}
           <div className="fade-in flex items-center justify-center">
-            <div className="w-full aspect-[3/4] max-w-md overflow-hidden relative">
-              <img
-                src={miningImage}
-                alt="Gold mining operations in Indonesia"
-                className="w-full h-full object-cover" />
+            <div className="relative w-full max-w-md">
+              {/* Decorative corner brackets */}
+              <div className="absolute -top-4 -left-4 w-20 h-20 z-10">
+                <div className="absolute top-0 left-0 w-full h-[2px] bg-gold/70" />
+                <div className="absolute top-0 left-0 h-full w-[2px] bg-gold/70" />
+              </div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 z-10">
+                <div className="absolute top-0 right-0 w-full h-[2px] bg-gold/70" />
+                <div className="absolute top-0 right-0 h-full w-[2px] bg-gold/70" />
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-20 h-20 z-10">
+                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gold/70" />
+                <div className="absolute bottom-0 left-0 h-full w-[2px] bg-gold/70" />
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 z-10">
+                <div className="absolute bottom-0 right-0 w-full h-[2px] bg-gold/70" />
+                <div className="absolute bottom-0 right-0 h-full w-[2px] bg-gold/70" />
+              </div>
 
-              
+              {/* Offset background pattern */}
+              <div className="absolute top-3 left-3 w-full h-full border border-gold/20 -z-0" />
 
+              {/* Dot pattern accent */}
+              <div className="absolute -right-6 top-1/4 w-16 h-32 z-0 opacity-30"
+                style={{
+                  backgroundImage: "radial-gradient(circle, hsl(var(--gold)) 1px, transparent 1px)",
+                  backgroundSize: "8px 8px",
+                }}
+              />
 
+              {/* Image */}
+              <div className="relative aspect-[3/4] overflow-hidden z-[1]">
+                <img
+                  src={miningImage}
+                  alt="Gold mining operations in Indonesia"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default AboutSection;
