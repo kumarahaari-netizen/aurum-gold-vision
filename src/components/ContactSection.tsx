@@ -12,7 +12,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="py-24 md:py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-12">
         <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">CONTACT</p>
         <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-12 leading-tight">
           Get in Touch
@@ -59,6 +59,23 @@ Indonesia
                 SUBMIT ENQUIRY
               </button>
             </form>
+          </div>
+        </div>
+
+        {/* Map Section */}
+        <div className="mt-16 fade-in">
+          <h3 className="font-serif text-foreground text-xl mb-6">Our Location</h3>
+          <div className="w-full h-[400px] border border-border overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.41850847638!2d113.8606388!3d-2.2161863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de19ee3824ca38b%3A0x2a491e80604a1ae0!2sPalangkaraya%2C%20Central%20Kalimantan%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="PT Aurum Italia Nusantara Location - Palangkaraya, Central Kalimantan"
+            />
           </div>
         </div>
       </div>
