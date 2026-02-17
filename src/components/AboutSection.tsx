@@ -4,7 +4,7 @@ import miningImage from "@/assets/mining-about.jpg";
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left: Text */}
           <div className="fade-in">
