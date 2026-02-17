@@ -32,10 +32,10 @@ const Navigation = () => {
       scrolled ? "bg-navy/95 backdrop-blur-sm shadow-lg" : "bg-transparent"}`
       }>
 
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-16">
-        <a href="#hero" onClick={(e) => handleClick(e, "#hero")} className="flex items-center gap-2">
-          <img src={logo} alt="PT Aurum Italia Nusantara" className="h-12 w-12 object-contain" />
-          <span className="font-serif text-ivory text-sm md:text-base tracking-wider hidden sm:inline">PT Aurum Italia Nusantara</span>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-20">
+        <a href="#hero" onClick={(e) => handleClick(e, "#hero")} className="flex items-center gap-3">
+          <img src={logo} alt="PT Aurum Italia Nusantara" className="h-14 w-14 object-contain drop-shadow-[0_0_6px_hsl(43_80%_50%_/_0.3)]" />
+          <span className="font-serif text-ivory text-sm md:text-lg tracking-wider hidden sm:inline">PT Aurum Italia Nusantara</span>
         </a>
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
