@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left: Text */}
           <div className="fade-in">
             <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">ABOUT US</p>
