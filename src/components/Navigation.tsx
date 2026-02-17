@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import logo from "@/assets/logo-new.svg";
 
 const navItems = [
-{ label: "HOME", href: "#hero" },
 { label: "ABOUT", href: "#about" },
 { label: "OPERATIONS", href: "#operations" },
 { label: "INVESTORS", href: "#investors" },

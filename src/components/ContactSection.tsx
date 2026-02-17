@@ -80,7 +80,7 @@ Nusantara</h3>
                 <Label htmlFor="message" className="text-foreground text-xs tracking-[0.1em] mb-2 block">MESSAGE</Label>
                 <Textarea id="message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} rows={5} className="bg-transparent border-border focus:border-gold/50 rounded-none resize-none" required />
               </div>
-              <button type="submit" className="border border-gold/40 text-gold hover:bg-gold/10 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300">
+              <button type="submit" className="bg-navy text-gold border border-navy hover:bg-navy/80 px-8 py-3 text-xs tracking-[0.2em] transition-all duration-300">
                 SUBMIT ENQUIRY
               </button>
             </form>
