@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.png";
+import { MapPin } from "lucide-react";
 
 const quickLinks = [
 { label: "Home", href: "#hero" },
@@ -57,6 +58,15 @@ const Footer = () => {
               href="mailto:info@aurumitalia.co.id"
               className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3 inline-block">
               info@aurumitalia.co.id
+            </a>
+            <a
+              href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3"
+            >
+              <MapPin size={14} strokeWidth={1.5} />
+              View on Map
             </a>
           </div>
         </div>

@@ -39,18 +39,24 @@ Indonesia
               For business and investment enquiries, please use the contact form or reach us directly via email. We welcome institutional and qualified investor dialogue.
             </p>
             {/* Small map */}
-            <div className="w-[180px] h-[180px] border-2 border-gold/30 shadow-md overflow-hidden mx-auto md:mx-0">
+            <a
+              href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-[180px] h-[180px] border-2 border-gold/30 shadow-md overflow-hidden mx-auto md:mx-0 relative group"
+            >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0!2d113.9213!3d-2.2096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de19ee3824ca38b%3A0x2a491e80604a1ae0!2sJl.+Tjilik+Riwut+No.Km.+1%2C+Palangka+Raya%2C+Kalimantan+Tengah+73112%2C+Indonesia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
+                style={{ border: 0, filter: "sepia(0.3) hue-rotate(190deg) saturate(0.8)" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="PT Aurum Italia Nusantara Location"
+                className="pointer-events-none"
               />
-            </div>
+            </a>
           </div>
 
           {/* Right: Form */}
