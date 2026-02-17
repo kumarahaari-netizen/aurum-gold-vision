@@ -38,7 +38,7 @@ const Footer = () => {
                   <a
                   href={link.href}
                   onClick={(e) => scrollTo(e, link.href)}
-                  className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300">
+                  className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 text-right mx-0 mr-[26px]">
                     {link.label}
                   </a>
                 </li>
@@ -63,8 +63,8 @@ const Footer = () => {
               href="https://www.google.com/maps/place/Jl.+Tjilik+Riwut+No.Km.+1,+Palangka+Raya,+Kalimantan+Tengah+73112,+Indonesia"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3"
-            >
+              className="flex items-center gap-1.5 text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300 mt-3">
+
               <MapPin size={14} strokeWidth={1.5} />
               View on Map
             </a>
@@ -80,8 +80,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
