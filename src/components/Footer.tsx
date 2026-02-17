@@ -1,4 +1,4 @@
-import logo from "@/assets/footer-logo.svg";
+import logo from "@/assets/logo-new.svg";
 import { MapPin } from "lucide-react";
 
 const quickLinks = [
