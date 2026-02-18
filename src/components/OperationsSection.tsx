@@ -41,19 +41,18 @@ const OperationsSection = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-gold text-xs tracking-[0.2em] mb-4 font-sans"
           >
             OPERATIONS & PROJECTS
           </motion.p>
 
           <div className="grid md:grid-cols-2 gap-16 mt-8">
-            {/* Left: Intro */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ amount: 0.2 }}
             >
               <h2 className="font-serif text-ivory text-3xl md:text-4xl mb-8 leading-relaxed">
                 Focused on Indonesia's<br />Mineral Wealth
@@ -65,12 +64,11 @@ const OperationsSection = () => {
               </p>
             </motion.div>
 
-            {/* Right: Focus Areas Box */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ amount: 0.2 }}
             >
               <div className="border border-ivory/10 p-8">
                 <h3 className="font-serif text-ivory text-xl mb-6">Operational Focus Areas</h3>
@@ -81,7 +79,7 @@ const OperationsSection = () => {
                       initial={{ opacity: 0, x: 20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: 0.1 * i + 0.4 }}
-                      viewport={{ once: true }}
+                      viewport={{}}
                       className="flex items-start gap-3"
                     >
                       <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
@@ -101,7 +99,7 @@ const OperationsSection = () => {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.15 * i }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ amount: 0.2 }}
                 whileHover={{ y: -8 }}
                 className="relative group overflow-hidden h-[300px]"
               >
@@ -126,7 +124,7 @@ const OperationsSection = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-ivory/30 text-xs font-sans mt-12 max-w-3xl leading-relaxed"
           >
             Each opportunity is reviewed with emphasis on regulatory compliance, operational credibility, and sustainable economic value.
@@ -135,24 +133,17 @@ const OperationsSection = () => {
       </div>
 
       <div ref={frameworkRef} className="relative overflow-hidden py-24 md:py-32">
-        {/* Background image with parallax */}
         <motion.div className="absolute inset-0" style={{ y: bgY }}>
-          <img
-            src={opsFrameworkBg}
-            alt=""
-            className="w-full h-[120%] object-cover"
-          />
+          <img src={opsFrameworkBg} alt="" className="w-full h-[120%] object-cover" />
         </motion.div>
-        {/* Dark navy overlay */}
         <div className="absolute inset-0 bg-navy/85" />
 
-        {/* Content centered */}
         <div className="relative z-10 max-w-[800px] mx-auto px-6 md:px-12 text-center">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-gold text-xs tracking-[0.2em] mb-4 font-sans"
           >
             FRAMEWORK
@@ -161,7 +152,7 @@ const OperationsSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="font-serif text-ivory text-3xl md:text-4xl mb-8 leading-relaxed"
           >
             Operational Framework
@@ -170,7 +161,7 @@ const OperationsSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            viewport={{ once: true }}
+            viewport={{}}
             className="text-ivory/60 font-sans leading-relaxed mb-10"
           >
             Our project participation is evaluated through a defined framework that prioritises:
@@ -183,7 +174,7 @@ const OperationsSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 * i + 0.4 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 className="flex items-start gap-3 border border-ivory/10 p-5"
               >
                 <span className="mt-1.5 w-2 h-2 rotate-45 bg-gold flex-shrink-0" />

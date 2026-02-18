@@ -25,7 +25,7 @@ const StrategicMineralSection = () => {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ amount: 0.2 }}
             className="relative overflow-hidden rounded-sm"
           >
             <motion.img
@@ -37,16 +37,12 @@ const StrategicMineralSection = () => {
             <div className="absolute inset-0 bg-navy/20" />
           </motion.div>
 
-          {/* Gold divider */}
-          <div className="hidden md:flex items-center justify-center absolute left-1/2 -translate-x-1/2 h-full z-10 pointer-events-none" style={{ position: "relative", width: 0 }}>
-          </div>
-
           {/* Right: Text with gold divider */}
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ amount: 0.2 }}
             className="flex items-center relative"
           >
             {/* Vertical gold divider */}
@@ -54,7 +50,7 @@ const StrategicMineralSection = () => {
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              viewport={{ once: true }}
+              viewport={{}}
               className="hidden md:block absolute left-0 top-[10%] h-[80%] w-[2px] bg-gradient-to-b from-transparent via-gold/60 to-transparent origin-top"
             />
 
@@ -76,7 +72,7 @@ const StrategicMineralSection = () => {
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 * i + 0.4 }}
-                    viewport={{ once: true }}
+                    viewport={{}}
                     className="flex items-start gap-3"
                   >
                     <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />

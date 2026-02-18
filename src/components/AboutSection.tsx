@@ -33,7 +33,7 @@ const AboutSection = () => {
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ amount: 0.2 }}
               className="py-24 md:py-32 pr-0 md:pr-16"
             >
               <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">ABOUT US</p>
@@ -54,7 +54,7 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 className="border border-border p-6 flex items-start gap-4"
               >
                 <div className="mt-1 text-gold">
@@ -75,7 +75,7 @@ const AboutSection = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ amount: 0.1 }}
               className="relative hidden md:block"
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -104,7 +104,7 @@ const AboutSection = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ amount: 0.2 }}
             >
               <p className="text-gold text-xs tracking-[0.2em] mb-4 font-sans">OUR APPROACH</p>
               <h2 className="font-serif text-foreground text-3xl md:text-4xl mb-8 leading-relaxed">
@@ -121,7 +121,7 @@ const AboutSection = () => {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 * i + 0.3 }}
-                    viewport={{ once: true }}
+                    viewport={{}}
                     className="flex items-start gap-3"
                   >
                     <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
@@ -136,7 +136,7 @@ const AboutSection = () => {
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ amount: 0.2 }}
               className="relative h-[500px]"
             >
               {/* Image 1 — back layer */}
@@ -144,14 +144,10 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 className="absolute top-0 right-0 w-[65%] h-[60%] rounded-lg overflow-hidden shadow-2xl shadow-navy/30"
               >
-                <img
-                  src={approach1}
-                  alt="Gold ore minerals"
-                  className="w-full h-full object-cover"
-                />
+                <img src={approach1} alt="Gold ore minerals" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-navy/15" />
               </motion.div>
 
@@ -160,14 +156,10 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.4 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 className="absolute bottom-0 left-0 w-[60%] h-[55%] rounded-lg overflow-hidden shadow-2xl shadow-navy/30 z-10"
               >
-                <img
-                  src={approach2}
-                  alt="Mining equipment at dusk"
-                  className="w-full h-full object-cover"
-                />
+                <img src={approach2} alt="Mining equipment at dusk" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-navy/15" />
               </motion.div>
 
@@ -176,14 +168,10 @@ const AboutSection = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, delay: 0.6 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 className="absolute bottom-[15%] right-[5%] w-[45%] h-[40%] rounded-lg overflow-hidden shadow-2xl shadow-navy/30 z-20"
               >
-                <img
-                  src={approach3}
-                  alt="Aerial mineral formations"
-                  className="w-full h-full object-cover"
-                />
+                <img src={approach3} alt="Aerial mineral formations" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-navy/10" />
               </motion.div>
 
