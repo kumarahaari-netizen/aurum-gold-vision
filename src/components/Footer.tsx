@@ -84,11 +84,11 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <h4 className="font-serif text-ivory text-sm mb-4 tracking-wide text-center">Quick Links</h4>
-            <ul className="space-y-2">
+          <div className="flex flex-col items-start md:items-center">
+            <h4 className="font-serif text-ivory text-sm mb-4 tracking-wide">Quick Links</h4>
+            <ul className="flex flex-wrap gap-x-6 gap-y-2 md:flex-col md:space-y-2 md:gap-0">
               {quickLinks.map((link) =>
-              <li key={link.label} className="text-left">
+              <li key={link.label}>
                   <a href={link.href} onClick={(e) => scrollTo(e, link.href)} className="text-ivory/40 hover:text-gold text-xs font-sans transition-colors duration-300">{link.label}</a>
                 </li>
               )}
